@@ -308,9 +308,19 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCounter(str) {
+  var vowelsCount = 0
+  const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+  for(let char of str){
+    if(vowels.includes(char)){
+      vowelsCount++
+    }
+  }
+  return vowelsCount
 }
+
+
+
 
 
 
