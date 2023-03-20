@@ -145,22 +145,22 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
 function hungryDog(weight, age){
   if(age >= 1 && weight <=5){
     return weight * 0.05;
-  }else if(age >=1 && weight >=6 && weight <= 10){
+  }else if(age >=1 && weight >= 6 && weight <= 10){
     return weight *0.04;
-  }else if(age >= 1 && weight >=11 && weight <= 15){
+  }else if(age >= 1 && weight >= 11 && weight <= 15){
     return weight * 0.03;
   }else if(age >= 1 && weight > 15 ){
     return weight * 0.02;
   }else if(age < 1 && age >= 0.583){
     return weight * 0.04;
-  }else if(age > 0.583 && age >= 0.333){
+  }else if(age < 0.583 && age >= 0.333){
     return weight * 0.05;
   }else if(age < 0.333){
     return weight * 0.10;
   }else{
     return "please try again";
   }
-}console.log(hungryDog(15,1));
+}console.log(hungryDog(16, 0.5));
 
 
 
@@ -258,11 +258,11 @@ Using the annoyingSong function below do the following:
 
 function annoyingSong(number){
       for(let i = number; i > 0; i --){
-        return '${i} bottles of soda on the wall, ${i} bottles of soda, take one down, pass it around ${i - 1} of soda on the wall'
+        return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i - 1} bottles of soda on the wall`
       }
 }
 
-console,log(annoyingSong(99));
+console.log(annoyingSong(5));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
